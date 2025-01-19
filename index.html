@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сносим-яйца.рф</title>
+    <link rel="icon" href="img/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="libs/gsap.min.js" defer></script>
+    <script src="libs/ScrollSmoother.min.js" defer></script>
+    <script src="libs/ScrollTrigger.min.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div style='justify-content: center;' class="content">
+            <header class="header">
+                <div style='justify-content: center;' class="navigation">
+                    <a href="#!"><img src="img/burger.svg" alt="" id="burger"></a>
+                    <img src="img/favicon-AmoyShare.png" alt="" class="logo">
+                    <ul class="nav-list">
+                        <li>Главная</li>
+                        <li>каталог</li>
+                        <li>спецпредложения</li>
+                        <li>доставка</li>
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <div class="main-header">
+                    <div data-speed="0.9" class="main-header__text-box">
+                        <p><span class="orange-text">Куры-молодки</span><br> от производителя<br> с бесплатной<br> доставкой</p>
+                        <p class="main-description">закажи прямо сейчас и получи подарок</p>
+                        <a href="#!" class="orange-button">Каталог</a>
+                    </div>
+                    <img data-speed="0.84" src="img/balet.jpg" alt="" class="balet"/>
+                </div>
+                <div class="info">
+                    <div class="text-block__info">
+                        <h1>кто мы?</h1>
+                        <p class="info-description">
+                            Наша компания занимается продажей молодняка кур-несушек по всей России уже 10 лет. За это время мы доставили домашнюю птицу более чем 80 000 клиентов
+                        </p>
+                    </div>
+                    <div class="stats">
+                        <div class="numbers">
+                            <p class="number">10</p>
+                            <p class="number">10</p>
+                            <p class="number">10+</p>
+                            <p class="number">10+</p>
+                        </div>
+                        <div class="stats-text">
+                            <p>лет опыта</p>
+                            <p>куриц</p>
+                            <p>специалистов</p>
+                            <p>лет курицам</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="catalog">
+                    <p class='background-text'>НАША ПРОДУКЦИЯ</p>
+                    <h1 class="catalog-title">каталог</h1>
+                    <div class="chickens">
+                        <div class="chicken-card">
+                            <p class="card-name">Хайасекс Уайт</p>
+                            <img src="img/gallery/g1.png" alt="" class="card-img" />
+                            <div class="chicken-stats">
+                                <div class="mini-block">
+                                    <img src="img/egg.png" alt="" class="card-stats-img" />
+                                    <p class="stat">65 гр</p>
+                                </div>
+                                <div class="mini-block">
+                                    <img src="img/ch.png" alt="" class="card-stats-img" />
+                                    <p class="stat">1.8 кг</p>
+                                </div>
+                            </div>
+                            <p class="buy-button">купить</p>
+                        </div>
+                        <div class="chicken-card">
+                            <p class="card-name">Хайсек Браун</p>
+                            <img src="img/gallery/g2.png" id='g2' alt="" class="card-img" />
+                            <div class="chicken-stats">
+                                <div class="mini-block">
+                                    <img src="img/egg.png" alt="" class="card-stats-img" />
+                                    <p class="stat">65 гр</p>
+                                </div>
+                                <div class="mini-block">
+                                    <img src="img/ch.png" alt="" class="card-stats-img" />
+                                    <p class="stat">2 кг</p>
+                                </div>
+                            </div>
+                            <p class="buy-button">купить</p>
+                        </div>
+                        <div class="chicken-card">
+                            <p class="card-name">Ломан Уайт</p>
+                            <img src="img/gallery/g3.png" alt="" class="card-img" />
+                            <div class="chicken-stats">
+                                <div class="mini-block">
+                                    <img src="img/egg.png" alt="" class="card-stats-img" />
+                                    <p class="stat">70 гр</p>
+                                </div>
+                                <div class="mini-block">
+                                    <img src="img/ch.png" alt="" class="card-stats-img" />
+                                    <p class="stat">1.7 кг</p>
+                                </div>
+                            </div>
+                            <p class="buy-button">купить</p>
+                        </div>
+                        <div class="chicken-card">
+                            <p class="card-name">Ломан Браун</p>
+                            <img src="img/gallery/g4.png" alt="" class="card-img" />
+                            <div class="chicken-stats">
+                                <div class="mini-block">
+                                    <img src="img/egg.png" alt="" class="card-stats-img" />
+                                    <p class="stat">72 гр</p>
+                                </div>
+                                <div class="mini-block">
+                                    <img src="img/ch.png" alt="" class="card-stats-img" />
+                                    <p class="stat">2 кг</p>
+                                </div>
+                            </div>
+                            <p class="buy-button">купить</p>
+                        </div>
+                        <div class="chicken-card">
+                            <p class="card-name">Родонит</p>
+                            <img src="img/gallery/g5.png" alt="" class="card-img" />
+                            <div class="chicken-stats">
+                                <div class="mini-block">
+                                    <img src="img/egg.png" alt="" class="card-stats-img" />
+                                    <p class="stat">64 гр</p>
+                                </div>
+                                <div class="mini-block">
+                                    <img src="img/ch.png" alt="" class="card-stats-img" />
+                                    <p class="stat">2.5 кг</p>
+                                </div>
+                            </div>
+                            <p class="buy-button">купить</p>
+                        </div>
+                        <div class="chicken-card">
+                            <p class="card-name">Леггорн</p>
+                            <img src="img/gallery/g6.png" alt="" class="card-img" />
+                            <div class="chicken-stats">
+                                <div class="mini-block">
+                                    <img src="img/egg.png" alt="" class="card-stats-img" />
+                                    <p class="stat">70 гр</p>
+                                </div>
+                                <div class="mini-block">
+                                    <img src="img/ch.png" alt="" class="card-stats-img" />
+                                    <p class="stat">1.6 кг</p>
+                                </div>
+                            </div>
+                            <p class="buy-button">купить</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

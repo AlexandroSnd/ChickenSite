@@ -1,0 +1,334 @@
+@font-face {
+    font-family: 'bebas';
+    src: url('/font/Bebas\ Neue\ Cyrillic.ttf');
+}
+
+
+:root{
+    --index: calc()
+}
+
+* {
+    font-family: bebas;
+    padding: 0;
+    margin: 0;
+}
+
+
+a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+html{
+    background-color: white;
+    display: flex;
+    scroll-behavior: smooth;
+}
+
+body{
+    display: flex;
+    padding: 0 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation{
+    opacity: 1;
+    display: flex;
+    font-size: 3vw;
+    gap: 6vw;
+    position: sticky;
+}
+
+.wrapper {
+    width: 100%;
+  }
+  
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6vh;
+}
+
+.logo{
+    width: 12vw;
+    object-fit: contain;
+}
+
+#burger{
+    margin-right: 1vw;
+    width: 3vw;
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    gap: 3vw;
+    align-items: center;
+}
+
+.nav-list li:hover{
+    color: orange;
+    cursor: pointer;
+}
+
+main {
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+}
+
+.main-header {
+    display: flex;
+    gap: 7vw;
+    justify-content: center;
+}
+
+.orange-text{
+    color: orange;
+}
+
+.orange-button{
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8vh;
+    opacity: 1;
+}
+
+.main-header__text-box{
+    font-size: 7vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+}
+
+.balet{
+    height: 50vw;
+    border-radius: 7vw;
+}
+
+.main-description{
+    font-size: 3vw;
+}
+
+.info {
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 1vw;
+    width: 80vw;
+    padding: 20px;
+  }
+
+.text-block__info {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+}
+
+.info-description {
+    font-size: 1.7vw;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orange;
+    font-size: 6vw;
+    gap: 10vw;
+}
+
+.stats-text {
+    display: flex;
+    gap: 8vw;
+}
+
+#catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+}
+.chickens {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 6vw;
+    width: 65vw;
+}
+.chicken-card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 2vw;
+    border-radius: 2vw;
+}
+.card-name {
+    text-align: center;
+}
+.card-img {
+    align-self: center;
+    width: 10vw;
+}
+.chicken-stats {
+    display: flex;
+    gap: 2vw;
+    color: #494747;
+}
+.mini-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    text-wrap: nowrap;
+    gap: 1vw;
+}
+.card-stats-img {
+    width: 2vw;
+}
+
+.buy-button{
+    padding: 1vw 2vw;
+    background-color: orange;
+    border-radius: 2vw;
+    font-size: 1.8vw;
+    cursor: pointer;
+}
+
+.background-text {
+    height: 0; 
+    overflow: visible;
+    display: flex;
+    color: #373636;
+    font-size: 10vw;
+    opacity: 0.1;
+    position: relative;
+    z-index: 1;
+}
+
+.catalog-title{
+    position: relative;
+    color: black;
+    z-index: 2;
+}
+
+@media (min-width: 1024px) {
+
+    #g2{
+        width: 250px
+    }
+
+    .balet {
+        height: 40vw;
+    }
+
+    .main-header__text-box{
+        font-size: 5vw;
+    }
+
+    .navigation {
+        font-size: 1.2vw; /* Уменьшаем размер шрифта на большем экране */
+        gap: 3vw; /* Уменьшаем расстояние между элементами */
+    }
+
+    .logo {
+        width: 5vw; /* Уменьшаем размер логотипа */
+    }
+
+    #burger {
+        width: 2vw; /* Уменьшаем размер бургера */
+    }
+    
+    .background-text {
+        height: 0; 
+        overflow: visible;
+        display: flex;
+        color: #373636;
+        font-size: 10vw;
+        opacity: 0.1;
+        position: relative;
+        z-index: 1;
+    }
+
+    #catalog {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+    }
+    .chickens {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 4vw;
+        width: 65vw;
+    }
+    .chicken-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        padding: 1vw;
+        border-radius: 1vw;
+    }
+    .card-name {
+        text-align: center;
+        font-size: 1.4vw;
+    }
+    .card-img {
+        align-self: center;
+        width: 5vw;
+    }
+    .chicken-stats {
+        display: flex;
+        gap: 2vw;
+        color: #494747;
+    }
+    .mini-block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1vw;
+        text-wrap: nowrap;
+        gap: 1vw;
+    }
+    .card-stats-img {
+        width: 2vw;
+    }
+    .stat {
+    
+    }
+    
+    .buy-button{
+        padding: 1vw 2vw;
+        background-color: orange;
+        border-radius: 2vw;
+        font-size: 1.3vw;
+    }
+}
