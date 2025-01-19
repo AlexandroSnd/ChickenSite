@@ -1,7 +1,9 @@
 @font-face {
     font-family: 'bebas';
-    src: url('/font/Bebas%20Neue%20Cyrillic.ttf');
+    src: url('../font/Bebas-Neue-Cyrillic.woff');
 }
+
+
 
 :root{
     --index: calc()
